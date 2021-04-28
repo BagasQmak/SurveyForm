@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">One Ok Rock Survey Form</h1>
+    <p id="description">Please fill the form, thank you</p>
+
+    <form id="survey-form">
+        <label for="name" id="name-label">
+            Name
+            <input type="text" id="name" placeholder="Enter your Name" required> 
+        </label>
+
+        <label for="email" id="email-label">
+            Email
+            <input type="email" id="email" placeholder="Enter your Email" required> 
+        </label>
+
+        <label for="number" id="number-label">
+            Age <span>(optional)</span>
+            <input type="number" id="number" placeholder="Age" min="13" max="50"> 
+        </label>
+
+        <label for="dropdown" id="dropdown-label">
+            How do you know ONE OK ROCK?
+            <select id="dropdown">
+                <option>Sosial Media</option>
+                <option>Youtube</option>
+            </select>
+        </label>
+
+        <label for="member" id="member-label">
+            Who is your favourite member?
+        </label>
+
+        <input type="radio" name="member" value="1"> Toru <br>
+        <input type="radio" name="member" value="2"> Taka <br>
+        <input type="radio" name="member" value="3"> Tomoya <br>
+        <input type="radio" name="member" value="4"> Ryota <br>
+
+        <br>        
+        <label for="album" id="album-label"> Choose your favourite album(s)</label>
+
+        <input type="checkbox" name="ambitions" value="1"> Ambitions <br>
+        <input type="checkbox" name="eye of the storm" value="2"> Eye of the storm <br>
+        <input type="checkbox" name="jinseixboku" value="3"> Jinsei x Boku <br>
+        <input type="checkbox" name="35xxxv" value="4"> 35xxxv <br>
+
+        <br>
+        <label for="comments">Any comments or suggestions?
+        <textarea name="comments" id="comments" placeholder="Enter your comment here.."></textarea>
+        </label>
+
+        <button type="submit" id="submit">Submit</button>
+    </form>
+
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
